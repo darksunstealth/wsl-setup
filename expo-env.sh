@@ -12,18 +12,6 @@ sudo apt install -y nodejs
 echo "📦 Installing Yarn (optional)..."
 npm install -g yarn
 
-echo "🕵️ Installing Watchman (recommended for Metro Bundler)..."
-sudo apt install -y autoconf automake build-essential python3-pip libtool pkg-config
-git clone https://github.com/facebook/watchman.git /tmp/watchman
-cd /tmp/watchman
-git checkout v2023.06.12.00
-./autogen.sh
-./configure
-make
-sudo make install
-cd ~
-rm -rf /tmp/watchman
-
 echo "🚀 Installing Expo CLI globally..."
 npm install -g expo-cli
 
